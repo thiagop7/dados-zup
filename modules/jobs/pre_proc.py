@@ -51,7 +51,7 @@ def process(input_path, output_path):
     left_data['transaction_date'] = left_data['transaction_date'].dt.strftime(
         '%Y/%m/%d')
 
-    logger.info(f'Saving data in output path: {output_path}')
+    logger.info(f'Saving data in output path: {output_path}'.format(file='TotalCost.xlsx'))
     # save data
     left_data[['user', 'transaction_date', 'cost_center', 'total_cost']].to_excel(
         output_path.format(file='TotalCost.xlsx'), index=False)
