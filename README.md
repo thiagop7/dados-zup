@@ -22,8 +22,41 @@ docker-compose ps
 
 ![alt text](https://github.com/thiagop7/dados-zup/blob/main/imageposgres.png)
 
-## Usage
+De dentro do diretório raiz do projeto, executar o comando abaixo iniciar o processo.
 
+```bash
+python main.py
+```
+
+Verificar que todos os passos foram executados.
+
+![alt text](https://github.com/thiagop7/dados-zup/blob/main/log.png)
+
+Verificar que o arquivo de saída foi gerado com sucesso no diretório de output /data/output/TotalCost.xlsx
+
+![alt text](https://github.com/thiagop7/dados-zup/blob/main/output.png)
+
+Verificar no container do postgresql que a tabela foi criada e os dados foram inseridos (utilizar o CONTAINER_ID gerado pelo docker para executar os comandos).
+
+```bash
+docker ps -a
+```
+
+![alt text](https://github.com/thiagop7/dados-zup/blob/main/dockerps.png)
+
+```bash
+docker exec -it [CONTAINER_ID] bash
+```
+![alt text](https://github.com/thiagop7/dados-zup/blob/main/dockerexec.png)
+
+Após entrar no container, verificar que a tabela foi criada pala aplicação e os dados foram inseridos.
+
+```bash
+psql -U postgres
+```
+Password: pwd0123456789
+
+![alt text](https://github.com/thiagop7/dados-zup/blob/main/result_banco.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
