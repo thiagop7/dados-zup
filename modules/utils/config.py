@@ -1,0 +1,7 @@
+import os
+
+POSTGRES_HOST = "localhost"
+POSTGRES_USER = "postgres"
+POSTGRES_PORT = "5432"
+POSTGRES_PASSWORD = "pwd0123456789"
+POSTGRES_DATABASE = "postgres"
