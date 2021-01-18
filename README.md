@@ -1,5 +1,13 @@
 # Dados-zup
 
+Projeto dividido em 5 camadas e seguindo as boas práticas do DDD:<br/>
+* domain - responsável por receber as entidades de negócio da aplicação
+* jobs - responsábel por receber o(s) job(s) que serão executados pela a aplicação
+* repository - responsável por receber todas as classes relacionadas com acesso a dados (foi utilizado orm SqlAlachemy)
+* services - responsável por receber todas as classes de serviço da aplicação
+* utils - responsável por receber as classes com funções de utilidade para toda a aplicação
+
+
 Neste documento está descrito o passo a passo para a execução do projeto. 
 
 ## Instalação
