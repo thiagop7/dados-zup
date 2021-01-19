@@ -16,7 +16,13 @@ Após "clonar" o projeto verificar que o mesmo está organizado da seguite forma
 
 ![alt text](https://github.com/thiagop7/dados-zup/blob/main/clone.png)
 
-Na raiz do projeto utilizar o comando docker para iniciar o banco de dados.
+Na raiz do projeto, executar o arquivo requirements.txt para instalar as dependências do projeto.
+
+```bash
+pip install -r requirements.txt
+```
+
+Na raiz do projeto, utilizar o comando docker para iniciar o banco de dados.
 
 ```bash
 docker-compose up -d
